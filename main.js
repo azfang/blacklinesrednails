@@ -32,43 +32,33 @@ $(document).ready(function() {
         $(".right-txt").css("font-size", "1vw");
       });
 
-    // $("#div-txtL1").mouseover(function(){
-    //     $("#title-left").html("PART ONE");
-    // });
-
-    // $("#div-txtL1").mouseleave(function(){
-    //     $("#title-left").html("BLACK LINES");
-    // });
-
-    // $("#div-txtL2").mouseover(function(){
-    //     $("#title-left").html("PART ONE");
-    // });
-
-    // $("#div-txtL2").mouseleave(function(){
-    //     $("#title-left").html("BLACK LINES");
-    // });
-
-
-
-      document.querySelectorAll('a[href^="#"]').forEach($anchor => {
-        $anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start' //scroll to top of the target element
-            });
+// Add smooth scrolling to all links
+  // Define selector for selecting 
+        // anchor links with the hash 
+        let anchorSelector = 'a[href^="#"]'; 
+      
+        // Collect all such anchor links 
+        let anchorList =  
+            document.querySelectorAll(anchorSelector); 
+          
+        // Iterate through each of the links 
+        anchorList.forEach(link => { 
+            link.onclick = function (e) { 
+      
+                // Prevent scrolling if the 
+                // hash value is blank 
+                e.preventDefault(); 
+          
+                // Get the destination to scroll to 
+                // using the hash property 
+                let destination =  
+                    document.querySelector(this.hash); 
+          
+                // Scroll to the destination using 
+                // scrollIntoView method 
+                destination.scrollIntoView({ 
+                    behavior: 'smooth' 
+                }); 
+            } 
         });
-    });
 })
-
-    // document.querySelectorAll('a[href^="."]').forEach($anchor => {
-    //     $anchor.addEventListener('click', function (e) {
-    //         e.preventDefault();
-    //         document.querySelector(this.getAttribute('href')).scrollIntoView({
-    //             behavior: 'smooth',
-    //             block: 'start', //scroll to top of the target element
-    //         });
-    //     });
-    // });
-  
-// })
