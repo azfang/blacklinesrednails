@@ -6,27 +6,33 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Semiotics</title>
       <link rel="stylesheet" href="style.css">
+      <script src="jquery.js"></script>
+      <script src="main.js"></script>
 </head>
+<main>
 <body>
   <!-- This will form the left half of the page, Rodchenko's half -->
   <!-- <h1 id="title-left">THE BODY</h1>
   <h1 id="title-right">AS SPECTACLE</h1> -->
   <div id="top-nav">
     <div id="secondary-title">
-      <h2>A TYPOGRAPHIC ANALYSIS of THE AVANT-GARDE BODY</h2>
+      <h2>A TYPOGRAPHIC ANALYSIS of the AVANT-GARDE BODY</h2>
     </div>
     <div id="nav-links">
       <div id="title-nav1">
-        <a href="intro">● INTRODUCTION</a>
+        <!-- <a href="#div-left3">● INTRODUCTION</a> -->
+        <a href="#div-left3" class="number" id="link1">(1)</a> <a href="#div-right3" class="number">(2)</a> INTRO
       </div>
       <div id="title-nav2">
-        ● THE AESTHETIC
+        <!-- <a href="#div-right3">● THE AESTHETIC</a> -->
+        <a href="#div-txtL3" class="number" id="link2">(3)</a> <a href="#div-txtR3" class="number">(4)</a> AESTHETICS
       </div>
       <div id="title-nav3">
-        ● THE REFERENTIAL
+        <!-- <a href="#ref">● THE REFERENTIAL</a> -->
+        <a href="#div-txtL3" class="number">(5)</a> <a href="#div-txtR3" class="number">(6)</a> INFLUENCES
       </div>
       <div id="title-nav4">
-        ● THE DISCURSIVE
+        <a href="#div-txtL3" class="number">(7)</a> <a href="#div-txtR3" class="number">(8)</a> DESIGNS
       </div>
     </div>
   </div>
@@ -34,16 +40,17 @@
       <div id="div-left2">
         <br> <br> <br> <br>
         <div id="div-left3">
-          <h1 id="title-left">BLACK_LINES_</h1>
+          <h1 id="title-left">BLACK LINES</h1>
+          <div id="intro-left"></div>
           <div id="introL">
           <div id="div-imgL1">
             <img id="fireescape" src="rodchenko.jpg" alt="A silhouette of a man stands on a fire escape ladder going up towards the sky">
           </div>
-          <div id="div-txtL1">
-            <a href="intro"><h2 class="txtScale">● INTRODUCTION</h2></a>
-              Likewise, Rodchenko’s
-              use of light to intensify relationships between forms in
-              sculptures as well as his play with textures in paintings such
+          <div class="left-txt" id="div-txtL1">
+            <h2 class="section-title">● 1. INTRODUCTION</h2>
+              "Language and image, each trespassing in the other’s house, 
+              secrete disquieting disjunctions, conundrums, circularities."
+              Hollis Frampton, sculptures as well as his play with textures
               as Non-Objective Painting no. 80 (Black on Black) (1918; fig.
               3) are equally evident in his photographs, such as Girl with
               a Leica (Devushka s Leikoi) (1932–33; fig. 4).7 The tactic of
@@ -59,10 +66,9 @@
               and flattening of the objects also makes the compositional
               process closer to that utilized in painting. Likewise, Rodchenko'
               use of the light Likewise, Rodchenko's use of the light
-              Likewise, Rodchenko's use of the light Likewise, 
           </div>
           </div>
-          <div id="div-txtL2">
+          <div class="left-txt" id="div-txtL2">
             Likewise, Rodchenko’s
             use of light to intensify relationships between forms in
             sculptures as well as his play with textures in paintings such
@@ -78,13 +84,12 @@
             of some of his paintings, while his collapsing of the space
             and flattening of the objects also makes the compositional
             process closer to that utilized in painting.
+            <br>
+            <br>
           </div>
-          <div id="aestheticL">
-            <div id="div-imgL2">
-              <img id="fireescape" src="posterL1.jpg" alt="A silhouette of a man stands on a fire escape ladder going up towards the sky">
-            </div>
-            <div id="div-txtL3">
-              <a href="intro"><h2 class="txtScale">● THE AESTHETIC</h2></a>
+          <div id="ref">
+            <div class="left-txt" id="div-txtL3">
+              <a href=""><h2 class="section-title">● THE AESTHETIC</h2></a>
                 Likewise, Rodchenko’s
                 use of light to intensify relationships between forms in
                 sculptures as well as his play with textures in paintings such
@@ -104,14 +109,14 @@
                 process closer to that utilized in painting. Likewise, Rodchenko'
                 use of the light Likewise, Rodchenko's use of the light
                 Likewise, Rodchenko's use of the light Likewise, 
-            </div>
+              </div>
             </div>
             <div id="refL">
               <div id="div-imgL3">
                 <img id="fireescape" src="posterL2.jpg" alt="A silhouette of a man stands on a fire escape ladder going up towards the sky">
               </div>
-              <div id="div-txtL4">
-                <a href="intro"><h2 class="txtScale">● THE REFERENTIAL</h2></a>
+              <div class="left-txt" id="div-txtL4">
+                <a href="intro"><h2 class="section-title">● THE DISCURSIVE</h2></a>
                   Likewise, Rodchenko’s
                   use of light to intensify relationships between forms in
                   sculptures as well as his play with textures in paintings such
@@ -141,13 +146,14 @@
     <div id="div-right2">
       <br> <br> <br> <br>
       <div id="div-right3">
-        <h1 id="title-right">RED_NAILS_</h1>
+        <h1 id="title-right">RED NAILS</h1>
+      <div id="intro">
       <div id="introR">
         <div id="div-imgR1">
-          <img id="fireescape" src="hang.jpg" alt="A silhouette of a man stands on a fire escape ladder going up towards the sky">
+          <img id="untitled" src="hang.jpg" alt="A silhouette of a man stands on a fire escape ladder going up towards the sky">
         </div>
-        <div id="div-txtR1">
-          <a href="intro"><h2 class="txtScale">● INTRODUCTION</h2></a>
+        <div class="right-txt" id="div-txtR1">
+          <a href="intro"><h2 class="section-title">● (2) INTRODUCTION</h2></a>
             Likewise, Rodchenko’s
             use of light to intensify relationships between forms in
             sculptures as well as his play with textures in paintings such
@@ -167,9 +173,10 @@
             process closer to that utilized in painting. Likewise, Rodchenko'
             use of the light Likewise, Rodchenko's use of the light
             Likewise, Rodchenko's use of the light Likewise,
+          </div>
         </div>
       </div>
-      <div id="div-txtR2">
+      <div class="right-txt" id="div-txtR2">
         Likewise, Rodchenko’s
         use of light to intensify relationships between forms in
         sculptures as well as his play with textures in paintings such
@@ -189,5 +196,9 @@
       </div>
     </div>
   </div>
+</main>
+<!-- loading animeJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>
