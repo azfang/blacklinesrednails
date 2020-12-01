@@ -11,11 +11,11 @@ $(document).ready(function() {
     $("#fireescape").mouseover(function(){
         $(".left-txt").css("font-size", "1vw");
         }, function(){
-        $(".left-txt").css("font-size", "0.885vw");
+        $(".left-txt").css("font-size", "0.89vw");
       });
 
     $("#fireescape").mouseleave(function(){
-        $(".left-txt").css("font-size", "0.885vw");
+        $(".left-txt").css("font-size", "0.89vw");
         }, function(){
         $(".left-txt").css("font-size", "1vw");
       });
@@ -61,4 +61,8 @@ $(document).ready(function() {
                 }); 
             } 
         });
+
+        $("#div-left3").scroll(function() {
+            $( ".maintitle" ).fadeOut( "slow" );
+          });
 })
