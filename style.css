@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     overflow: hidden;
     font-family: Helvetica, serif;
@@ -41,7 +37,7 @@ body {
     border-bottom: 1px solid black;
     top: -0.25%;
     left: -1%;
-    padding: 0vw 4vw;
+    padding: 0vw 4.15vw;
     justify-content: space-between;
 }
 
@@ -66,7 +62,6 @@ body {
     width: 50vw;
     height: 100vh;
     position: absolute;
-    top: 0%;
     left: 0%;
     z-index: 1;
 }
@@ -75,7 +70,6 @@ body {
     width: 50vw;
     height: 100vh;
     position: absolute;
-    top: 0%;
     left: 50%;
     z-index: 1;
 }
@@ -95,16 +89,14 @@ body {
 
 /* Positioning the H1 typography */
 #title-left, #title-right {
-    position: fixed;
-    mix-blend-mode: multiply;
-    padding: 10px;
-    top: 3%;
+    /* position: fixed; */
+    /* mix-blend-mode: multiply; */
+    /* background-color: white; */
+    /* width: 45%; */
+    padding: 0px 10px;
+    /* top: 3%; */
     z-index: 2;
 }
-
-/* #intro-left {
-    padding-top: 60px;
-} */
 
 #introL, #introR, #refL {
     display: flex;
@@ -119,8 +111,9 @@ body {
 }
 
 #div-imgL1, #div-imgR1, #div-imgL2, #div-imgL3 {
-    padding: 80px 12px 0px 12px;
-    /* padding: 20px 12px; */
+    /* padding: 80px 12px 0px 12px; */
+    padding: 0px 12px;
+    transform: translateY(-2.75vh);
 }
 
 .section-title {
@@ -134,13 +127,15 @@ body {
 
 #div-txtL1, #div-txtR1, #div-txtL3, #div-txtL4 {
     flex-grow: 1;
-    padding: 60px 12px 0px 12px;
-    /* padding: 0px 12px; */
+    /* padding: 60px 12px 0px 12px; */
+    padding: 0px 12px;
+    transform: translateY(-5vh);
 }
 
 #div-txtL2, #div-txtR2 {
     order: 2;
     padding: 10px 12px 0px 12px;
+    transform: translateY(-5.8vh);
 }
 
 /* #div-txtL3, #div-imgL2 {
@@ -170,13 +165,30 @@ a:hover {
     color: red;
 }
 
-img {
+sup {
+    vertical-align: super;
+    font-size: 0.7vw;
+    color: red;
+}
+
+/* .number {
+    font-family: 'Salicorne', serif;
+    font-weight: 200;
+} */
+
+.imgSM {
+    width: 10vw;
+    padding: 20px 0px;
+}
+
+.img-scale {
     max-width: 20vw;
     transition: 0.3s;
+    /* border: 1px solid black; */
     /* opacity: 90%; */
     /* mix-blend-mode: screen; */
 }
 
-img:hover {
+.img-scale:hover {
     max-width: 30vw;
 }
