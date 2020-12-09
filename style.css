@@ -6,6 +6,10 @@ body {
     color: black;
 }
 
+html {
+    background-color: white;
+}
+
 /* Styling the scrollbars */
 *::-webkit-scrollbar {
     width: 10px;
@@ -80,11 +84,13 @@ body {
 }
 
 #div-left3, #div-right3 {
-    height: 1500px;
-    padding: 2.5vw;
+    padding: 1500px 2.5vw 0vw 2.5vw;
+    /* padding: 100px 2.5vw 0vw 2.5vw; */
     isolation: isolate;
     display: flex;
     flex-direction: column;
+    /* opacity: 0; */
+    opacity: 1;
 }
 
 /* Positioning the H1 typography */
@@ -123,6 +129,11 @@ body {
 
 .section-title:hover {
     font-size: 1.5vw;
+}
+
+#aesthetic-title {
+    padding: 0px;
+    transform: translateY(-5vh);
 }
 
 #div-txtL1, #div-txtR1, #div-txtL3, #div-txtL4 {
@@ -177,8 +188,9 @@ sup {
 } */
 
 .imgSM {
-    width: 10vw;
-    padding: 20px 0px;
+    width: 15vw;
+    padding: 0px 20px;
+    float: right;
 }
 
 .img-scale {
