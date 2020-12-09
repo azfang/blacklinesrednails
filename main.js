@@ -1,12 +1,57 @@
 $(document).ready(function() {
 
-    // $('#link1').on('click', function(){
-    //     $('#intro-left').css('padding-top','175px');
-    // })
+    // $("html").mouseover(pageLoad);
+    // function pageLoad() {
+    //   scrollLeftUp.play();
+    //   scrollRightUp.play();
+    // }
+    window.onload = function() {
+      scrollLeftUp.play();
+      scrollRightUp.play();
+    };
 
-    // $('#link2').on('click', function(){
-    //     $('#intro-left').css('padding-top','60px');
-    // })
+    // var scrollLeftUp = anime({
+    //   targets: '#div-left3',
+    //   translateY: [
+    //     {value: -50, duration: 500},
+    //   ],
+    //   opacity: [
+    //     {value: 1, duration: 500},
+    //   ],
+    //   easing: 'easeInOutQuad',
+    //   autoplay: false
+    // });
+
+    // var scrollRightUp = anime({
+    //   targets: '#div-right3',
+    //   translateY: [
+    //     {value: -50, duration: 500, delay: 400},
+    //   ],
+    //   opacity: [
+    //     {value: 1, duration: 500, delay: 400},
+    //   ],
+    //   easing: 'easeInOutQuad',
+    //   autoplay: false
+    // });
+
+    var scrollLeftUp = anime({
+      targets: '#div-left3',
+      translateY: [
+        {value: -1450, duration: 1000, delay: 200},
+      ],
+      easing: 'easeInOutQuad',
+      autoplay: false
+    });
+
+    var scrollRightUp = anime({
+      targets: '#div-right3',
+      translateY: [
+        {value: -1450, duration: 1000, delay: 600},
+      ],
+      easing: 'easeInOutQuad',
+      autoplay: false
+    });
+
     
     $("#fireescape").mouseover(function(){
         $(".left-txt").css("font-size", "1vw");
@@ -30,6 +75,11 @@ $(document).ready(function() {
         $(".right-txt").css("font-size", "0.885vw");
         }, function(){
         $(".right-txt").css("font-size", "1vw");
+      });
+
+      $( "#secondary-title" ).mouseover(function() {
+        // $("html").css("background-color", "black");
+        // $("body").css("color", "red");
       });
 
 // Add smooth scrolling to all links
@@ -66,3 +116,4 @@ $(document).ready(function() {
             $( ".maintitle" ).fadeOut( "slow" );
           });
 })
+
